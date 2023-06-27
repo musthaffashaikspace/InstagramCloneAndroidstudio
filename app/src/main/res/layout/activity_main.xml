@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainactivity">
+
+    <com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topthing"
+        >
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:title="@string/Instagram"
+                app:titleTextAppearance="@style/TextAppearance.AppCompat.Small"
+                app:menu="@menu/top_menu"
+                android:id="@+id/topappbar"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topthing"
+        android:padding="5dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/storyrecycleview"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/storyrecycleview"
+        android:id="@+id/postscrollrecyview"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
+        android:layout_above="@id/bottomlayout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomlayout">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:menu="@menu/bottom_menu"
+            android:id="@+id/bottomappbar"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoryView">
+
+    <ImageView
+        android:id="@+id/imagestory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:src="@drawable/srk1" />
+
+    <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/storymessage"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:hint="Send a message"
+            android:textColorHint="#DFDADA"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/storylike"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:foreground="@drawable/storylike"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/storylike"
+            android:backgroundTint="@color/black"
+            android:layout_toLeftOf="@id/storysend"
+            android:layout_marginRight="30dp"
+            android:contentDescription="storylike"
+            />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:foreground="@drawable/storysend"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/black"
+        android:id="@+id/storysend"
+        android:contentDescription="storysend"/>
+
+
+</RelativeLayout>

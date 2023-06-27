@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/reelrellayout">
+
+    <VideoView
+        android:id="@+id/onereel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="fightclub"
+            android:textSize="25sp"
+            android:id="@+id/accounttextreels"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="folow for more"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_below="@+id/accounttextreels"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="90dp"
+        >
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reelslike"
+            android:foreground="@drawable/whiteheart"
+            android:contentDescription="adfadsf"
+            android:backgroundTint="@color/black"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:foreground="@drawable/whitecomment"
+            android:contentDescription="adfadsf"
+            android:backgroundTint="@color/black"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:foreground="@drawable/whitesend"
+            android:contentDescription="adfadsf"
+            android:backgroundTint="@color/black"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:foreground="@drawable/savereel"
+            android:backgroundTint="@color/black"
+            android:contentDescription="adfadsf"
+            android:id="@+id/reelsave"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

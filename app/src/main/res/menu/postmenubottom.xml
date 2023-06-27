@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="likepost"
+        android:contentDescription="likepost"
+        android:icon="@drawable/favroite"
+        app:showAsAction="always"
+        android:id="@+id/postbottomlike"
+        />
+    <item
+        android:title="comment"
+        android:contentDescription="comment"
+        android:icon="@drawable/comment"
+        app:showAsAction="always"
+        android:id="@+id/postbottomcomment"/>
+    <item
+        android:title="comment"
+        android:contentDescription="comment"
+        android:icon="@drawable/send"
+        app:showAsAction="always"
+        android:id="@+id/postbottomshare"/>
+
+</menu>
